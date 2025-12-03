@@ -62,7 +62,7 @@ The following step will get you up and running with the project:
 Make sure you have Git installed.
 
 ```
-git clone https://github.com/<username>/<repo-name>.git
+git clone https://github.com/dhamayantiratnawulan/take-home-test.git
 ```
 
 After cloning, go into the project directory:
