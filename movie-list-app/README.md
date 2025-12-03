@@ -68,7 +68,7 @@ git clone https://github.com/dhamayantiratnawulan/take-home-test.git
 After cloning, go into the project directory:
 
 ```
-cd <repo-name>
+cd take-home-test/movie-list-app
 ```
 
 2. Install Dependencies
