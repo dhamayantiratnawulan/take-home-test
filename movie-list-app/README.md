@@ -85,24 +85,7 @@ Using yarn:
 yarn
 ```
 
-3. Set Up Environment Variables
-
-This project uses the TMDB API, so you must create an environment file.
-
-Create a file named:
-```
-.env.local
-```
-
-
-Add your TMDB API key:
-```
-VITE_OMDB_API_KEY=3c478242
-```
-
-If this value is missing, the app will throw apikey undefined.
-
-4. Run the Application Locally
+3. Run the Application Locally
 
 To start the development server:
 
@@ -120,4 +103,44 @@ yarn dev
 The app will be available at:
 ```
 http://localhost:5173
+```
+
+---
+
+## How to Fix (Update API Key)
+1. Open the .env file
+
+Your project should contain a .env file like:
+
+```
+VITE_OMDB_API_KEY=your_api_key_here
+```
+
+2. Get a fresh API key
+
+Visit OMDb website:
+
+👉 https://www.omdbapi.com/apikey.aspx
+
+Choose the Free API key, enter your email, and activate it.
+
+3. Replace the old key
+
+Update the .env file:
+
+```
+VITE_OMDB_API_KEY=NEW_API_KEY_HERE
+```
+
+4. Restart your development server
+
+Very important — Vite only loads .env variables during startup.
+```
+npm run dev
+```
+
+or
+
+```
+yarn dev
 ```
